@@ -96,6 +96,22 @@
     .msg{ padding-left:38px; }
   }
 
+
+  .hero-side{ flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; align-items:flex-end; text-align:right; padding:40px clamp(24px,8vw,140px) 40px 24px; }
+  .hero-side svg{ width:92px; height:92px; display:block; }
+  .hero-side .hs-k{ margin-top:22px; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); font-weight:600; }
+  .hero-side .hs-t{ margin-top:12px; font-size:clamp(1.2rem,2vw,1.6rem); line-height:1.2; color:#fff; font-weight:600; max-width:360px; }
+  .hero-side .hs-t em{ font-style:normal; color:var(--gold); }
+  .hero-side .hs-x{ margin-top:12px; font-size:.82rem; line-height:1.5; color:var(--cream); max-width:330px; font-weight:300; }
+  .hero-side .hs-c{ margin-top:18px; font-size:.74rem; color:var(--gold); font-weight:500; letter-spacing:.03em; padding-top:14px; border-top:1px solid rgba(231,185,46,.35); }
+  @media (max-width:760px){
+    .hero-inner{ flex-direction:column; }
+    .hero-band{ min-height:0; }
+    .hero-meta{ margin-top:26px; }
+    .hero-side{ padding:36px 20px 44px; margin-left:clamp(16px,12vw,140px); align-items:flex-start; text-align:left; }
+    .hero-side svg{ width:72px; height:72px; }
+    .hero-side .hs-k{ margin-top:18px; }
+  }
 </style>
 </head>
 <body>
@@ -110,6 +126,23 @@
         <div class="d">Viernes, 30 de octubre de 2026</div>
         <div class="b">INGEDÁS · SERVICIOS INGEDÁS S.L.</div>
       </div>
+    </div>
+    <div class="hero-side">
+        <svg viewBox="0 0 132 132" role="img" aria-label="Huella de carbono">
+          <circle cx="66" cy="66" r="62" fill="none" stroke="#e7b92e" stroke-width="2"/>
+          <path d="M66 6 A60 60 0 0 1 126 66" fill="none" stroke="#e7b92e" stroke-width="5" stroke-linecap="round"/>
+          <path d="M50 70 C44 60 48 46 58 44 C68 42 76 50 77 60 C78 72 80 80 76 90 C72 98 60 100 54 94 C48 88 54 78 50 70 Z" fill="#e7b92e"/>
+          <ellipse cx="45" cy="36" rx="5.2" ry="6.4" fill="#e7b92e" transform="rotate(-14 45 36)"/>
+          <ellipse cx="58" cy="30" rx="4.6" ry="5.8" fill="#e7b92e" transform="rotate(-4 58 30)"/>
+          <ellipse cx="70" cy="30" rx="4.2" ry="5.4" fill="#e7b92e" transform="rotate(6 70 30)"/>
+          <ellipse cx="81" cy="35" rx="3.8" ry="5" fill="#e7b92e" transform="rotate(16 81 35)"/>
+          <ellipse cx="89" cy="44" rx="3.2" ry="4.4" fill="#e7b92e" transform="rotate(26 89 44)"/>
+          <text x="66" y="118" font-family="Poppins, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#fff" letter-spacing="1">CO<tspan font-size="9" dy="3">2</tspan></text>
+        </svg>
+        <div class="hs-k">Huella de carbono</div>
+        <div class="hs-t">Lo que no se mide, no se reduce: <em>calculamos la huella de carbono</em> de tu empresa.</div>
+        <div class="hs-x">Medimos tus emisiones, te decimos dónde recortar consumo y costes, y te preparamos para certificaciones y ayudas.</div>
+        <div class="hs-c">david@ingedas.es · 626 119 254</div>
     </div>
   </div>
 </header>
